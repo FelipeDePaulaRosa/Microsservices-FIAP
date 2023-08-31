@@ -4,5 +4,6 @@
     {
         Exame = 1,
         Consulta = 2,
+        Cirurgia = 3
     }
 }
