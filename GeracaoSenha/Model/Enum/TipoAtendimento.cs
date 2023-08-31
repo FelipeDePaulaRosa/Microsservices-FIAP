@@ -1,9 +1,8 @@
-﻿namespace GeracaoSenha.Model
+﻿namespace GeracaoSenha.Model.Enum
 {
     public enum TipoAtendimento
     {
         Exame = 1,
         Consulta = 2,
-        Cirurgia = 3
     }
 }
