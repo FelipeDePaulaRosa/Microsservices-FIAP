@@ -1,4 +1,4 @@
-﻿namespace GeracaoSenha.Model
+﻿namespace GeracaoSenha.Model.Enum
 {
     public enum TipoAtendimento
     {
