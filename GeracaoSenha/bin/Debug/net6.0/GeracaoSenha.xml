@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GeracaoSenha</name>
+    </assembly>
+    <members>
+        <member name="M:GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento(GeracaoSenha.Data.Dtos.CreateAtendimentoDto)">
+            <summary>
+            Registro inicial do atendimento e geração da senha. Retorna o atendimento com sua senha e link para acompanhamento.
+            </summary>
+            <param name="TipoAtendimento">Valor necessário para identificar o tipo do atendimento. [EXAME, CONSULTA, EXAME_PREFERENCIAL, CONSULTA_PREFERENCIAL, CIRURGIA]</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso o registro seja realizado com sucesso</response> 
+            <response code="400">Caso o tipo de atendimento não exista.</response> 
+            
+        </member>
+        <member name="M:GeracaoSenha.Controllers.AtendimentoController.Chamar(System.String,GeracaoSenha.Data.Dtos.ChamarAtendimentoDto)">
+            <summary>
+            Registra a chamada de um atendimento ao guichê.
+            </summary>
+            <param name="senha">Código da senha a ser finalizada.</param>
+            <param name="guiche">Número do guichê.</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso o registro seja realizado com sucesso</response> 
+            <response code="404">Caso a senha não exista.</response> 
+            
+        </member>
+        <member name="M:GeracaoSenha.Controllers.AtendimentoController.IniciarAtendimento(System.String)">
+            <summary>
+            Registra o início de um atendimento no guichê.
+            </summary>
+            <param name="senha">Código da senha.</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso o registro seja realizado com sucesso</response> 
+            <response code="404">Caso a senha não exista.</response> 
+            
+        </member>
+        <member name="M:GeracaoSenha.Controllers.AtendimentoController.FinalizarAtendimento(System.String)">
+            <summary>
+            Registra a finalização de um atendimento no guichê.
+            </summary>
+            <param name="senha">Código da senha a ser finalizada.</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso o registro seja realizado com sucesso</response> 
+            <response code="404">Caso a senha não exista.</response> 
+            
+        </member>
+        <member name="M:GeracaoSenha.Controllers.AtendimentoController.ConsultarAtendimento(System.String)">
+            <summary>
+            Consulta um atendimento com base na senha gerada.
+            </summary>
+            <param name="senha">Código da senha do atendimento.</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a senha exista.</response> 
+            <response code="404">Caso a senha não exista.</response> 
+            
+        </member>
+        <member name="M:GeracaoSenha.Controllers.FilaController.ConsultarFila">
+            <summary>
+            Retorna a lista de atendimentos pendentes por ordem de chegada.
+            </summary>
+            <returns>IEnumerable</returns>
+            <response code="200"></response>
+            
+        </member>
+        <member name="M:GeracaoSenha.Controllers.FilaController.ConsultarProximo">
+            <summary>
+            Retorna o próximo atendimento pendentes.
+            </summary>
+            <returns>ReadAtendimentoDto</returns>
+            <response code="200"></response>
+            
+        </member>
+        <member name="M:GeracaoSenha.Controllers.FilaController.ConsultarPosicao(System.String)">
+            <summary>
+            Retorna a posição de um atendimento na fila com base na senha.
+            </summary>
+            <param name="senha">Código da senha do atendimento.</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso a senha exista.</response> 
+            <response code="404">Caso a senha não exista.</response> 
+            
+        </member>
+    </members>
+</doc>
