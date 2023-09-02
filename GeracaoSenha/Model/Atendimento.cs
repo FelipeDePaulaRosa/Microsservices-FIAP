@@ -11,7 +11,7 @@ namespace GeracaoSenha.Model
         public TipoAtendimento TipoAtendimento { get; private set; }
         public DateTime HorarioChegada { get; private set; }
         public bool Atendido { get; private set; }
-        public DateTime HorarioAtendimento { get; private set; }
+        public DateTime? HorarioAtendimento { get; private set; }
 
         public Atendimento(int idAnterior, TipoAtendimento _TipoAtendimento)
         {

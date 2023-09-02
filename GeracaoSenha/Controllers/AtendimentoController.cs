@@ -34,13 +34,7 @@ namespace GeracaoSenha.Controllers
         public IActionResult RegistrarAtendimento([FromBody] CreateAtendimentoDto atendimentoDto)
         {
             _logger.LogTrace("Iniciando geração da senha.");
-            if (!Enum.IsDefined(typeof(TipoAtendimento), atendimentoDto.CodigoTipoAtendimento))
-            {
-                _logger.LogError("Tipo de Atendimento inválido.");
-                return BadRequest("Tipo de Atendimento inválido");
-            }
-            TipoAtendimento tipoAtendimento = (TipoAtendimento)atendimentoDto.CodigoTipoAtendimento;
-            Atendimento atendimento = AtendimentosContext.NovoAtendimento(tipoAtendimento);
+            Atendimento atendimento = AtendimentosContext.NovoAtendimento(atendimentoDto.TipoAtendimento);
             var retorno = new ReadAtendimentoDto(atendimento);
             _logger.LogTrace("Senha gerada com Sucesso.");
             return Ok(retorno);
@@ -51,7 +45,7 @@ namespace GeracaoSenha.Controllers
         /// </summary>
         /// <param name="senha">Código da senha a ser finalizada.</param>
         /// <returns>IActionResult</returns>
-        /// <response code="200">Caso o registro seja realizado com sucesso</response> 
+        /// <response code="204">Caso o registro seja realizado com sucesso</response> 
         /// <response code="404">Caso a senha não exista.</response> 
         /// 
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Boas Praticas\\GeracaoSenha\\GeracaoSenha.csproj": {}
+    "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Boas Praticas\\Projeto\\Repos\\Microsservices-FIAP\\GeracaoSenha\\GeracaoSenha.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Boas Praticas\\GeracaoSenha\\GeracaoSenha.csproj": {
+    "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Boas Praticas\\Projeto\\Repos\\Microsservices-FIAP\\GeracaoSenha\\GeracaoSenha.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Boas Praticas\\GeracaoSenha\\GeracaoSenha.csproj",
+        "projectUniqueName": "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Boas Praticas\\Projeto\\Repos\\Microsservices-FIAP\\GeracaoSenha\\GeracaoSenha.csproj",
         "projectName": "GeracaoSenha",
-        "projectPath": "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Boas Praticas\\GeracaoSenha\\GeracaoSenha.csproj",
+        "projectPath": "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Boas Praticas\\Projeto\\Repos\\Microsservices-FIAP\\GeracaoSenha\\GeracaoSenha.csproj",
         "packagesPath": "C:\\Users\\Eduardo Cesar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Boas Praticas\\GeracaoSenha\\obj\\",
+        "outputPath": "C:\\Users\\Eduardo Cesar\\Documents\\Estudos\\FIAP\\Boas Praticas\\Projeto\\Repos\\Microsservices-FIAP\\GeracaoSenha\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

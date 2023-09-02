@@ -5,49 +5,34 @@ namespace GeracaoSenha.Data
 {
     public static class AtendimentosContext
     {
-        public static List<Atendimento> AtendimentosConsulta = new List<Atendimento>();
-        public static List<Atendimento> AtendimentosExame = new List<Atendimento>();
+        public static List<Atendimento> Atendimentos = new List<Atendimento>();
 
         public static Atendimento NovoAtendimento(TipoAtendimento tipoAtendimento)
         {
-            var Lista = new List<Atendimento>();
+            Atendimento Ultimo = Atendimentos.Where(atendimento => atendimento.TipoAtendimento == tipoAtendimento).LastOrDefault();
+            Atendimento Novo = null;
 
-            switch (tipoAtendimento)
+            if (Ultimo is null)
             {
-                case TipoAtendimento.Exame:
-                    Lista = AtendimentosExame;
-                    break;
-                case TipoAtendimento.Consulta:
-                    Lista = AtendimentosConsulta;
-                    break;
-            }
-
-            if (Lista.Count == 0)
-            {
-                Lista.Add(new Atendimento(tipoAtendimento));
+                Novo = new Atendimento(tipoAtendimento);
+                Atendimentos.Add(Novo);
             }
             else
             {
-                Lista.Add(new Atendimento(Lista.Last().Id, tipoAtendimento));
+                Novo = new Atendimento(Ultimo.Id, tipoAtendimento);
+                Atendimentos.Add(Novo);
             }
-            return Lista.Last();
+            return Novo;
         }
 
         public static Atendimento ConsultarAtendimentoPelaSenha(string Senha)
         {
             var Lista = new List<Atendimento>();
 
-            switch (Senha[0])
-            {
-                case 'C':
-                    Lista = AtendimentosConsulta;
-                    break;
-                case 'E':
-                    Lista = AtendimentosExame;
-                    break;
-            }
+            var sigla = Senha.Substring(0, 2);
+            var tipoAtendimento = SiglaTipoAtendimento.GetTipoAtendimentoSigla(sigla);
 
-            var atendimento = Lista.FirstOrDefault(atendimento => atendimento.Id == Convert.ToInt32(Senha.Substring(1, 4)));
+            var atendimento = Atendimentos.FirstOrDefault(atendimento => atendimento.Id == Convert.ToInt32(Senha.Substring(2, 4)) && atendimento.TipoAtendimento == tipoAtendimento);
             return atendimento;
         }
     }

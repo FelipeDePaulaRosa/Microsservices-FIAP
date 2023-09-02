@@ -27,11 +27,8 @@ namespace GeracaoSenha.Controllers
         [HttpGet]
         public IEnumerable<ReadAtendimentoDto> ConsultarFila()
         {
-            List<Atendimento> lista = new List<Atendimento>();
             List<ReadAtendimentoDto> listaDto = new List<ReadAtendimentoDto>();
-            lista.AddRange(AtendimentosContext.AtendimentosConsulta);
-            lista.AddRange(AtendimentosContext.AtendimentosExame);
-            lista.ForEach(atendimento => listaDto.Add(new ReadAtendimentoDto(atendimento)));
+            AtendimentosContext.Atendimentos.ForEach(atendimento => listaDto.Add(new ReadAtendimentoDto(atendimento)));
             return listaDto.Where(atendimentoDto => !atendimentoDto.Atendimento.Atendido).OrderBy(atendimentoDto => atendimentoDto.Atendimento.HorarioChegada);
         }
 
@@ -47,10 +44,7 @@ namespace GeracaoSenha.Controllers
         [HttpGet("{senha}")]
         public IActionResult ConsultarPosicao(string senha)
         {
-            List<Atendimento> lista = new List<Atendimento>();
-            lista.AddRange(AtendimentosContext.AtendimentosConsulta);
-            lista.AddRange(AtendimentosContext.AtendimentosExame);
-            var pendentes = lista.Where(atendimento => !atendimento.Atendido).OrderBy(atendimento => atendimento.HorarioChegada).ToList();
+            var pendentes = AtendimentosContext.Atendimentos.Where(atendimento => !atendimento.Atendido).OrderBy(atendimento => atendimento.HorarioChegada).ToList();
             var atendimento = AtendimentosContext.ConsultarAtendimentoPelaSenha(senha);
             ReadPosicaoDto poscaoDto = new ReadPosicaoDto();
             poscaoDto.Posicao = pendentes.IndexOf(atendimento) + 1;

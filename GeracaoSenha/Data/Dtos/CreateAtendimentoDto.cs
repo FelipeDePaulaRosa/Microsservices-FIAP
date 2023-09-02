@@ -1,10 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using GeracaoSenha.Model.Enum;
+using System.ComponentModel.DataAnnotations;
 
 namespace GeracaoSenha.Data.Dtos
 {
     public class CreateAtendimentoDto
     {
         [Required]
-        public int CodigoTipoAtendimento { get; set; }
+        public TipoAtendimento TipoAtendimento { get; set; }
     }
 }

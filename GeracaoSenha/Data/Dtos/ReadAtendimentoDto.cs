@@ -13,7 +13,7 @@ namespace GeracaoSenha.Data.Dtos
         public ReadAtendimentoDto(Atendimento _Atendimento)
         {
             Atendimento = _Atendimento;
-            Senha = Atendimento.TipoAtendimento == TipoAtendimento.Consulta ? "C" : "E";
+            Senha = SiglaTipoAtendimento.GetSiglaTipoAtendimento(Atendimento.TipoAtendimento);
             Senha += Atendimento.Id.ToString().PadLeft(4, '0');
         }
     }
