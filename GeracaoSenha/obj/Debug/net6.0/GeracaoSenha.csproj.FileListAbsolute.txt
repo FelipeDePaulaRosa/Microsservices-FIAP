@@ -52,3 +52,5 @@ C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Boas Praticas\Projeto\Repos\Micros
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Boas Praticas\Projeto\Repos\Microsservices-FIAP\GeracaoSenha\obj\Debug\net6.0\ref\GeracaoSenha.dll
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Boas Praticas\Projeto\Repos\Microsservices-FIAP\GeracaoSenha\obj\Debug\net6.0\GeracaoSenha.pdb
 C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Boas Praticas\Projeto\Repos\Microsservices-FIAP\GeracaoSenha\obj\Debug\net6.0\GeracaoSenha.genruntimeconfig.cache
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Boas Praticas\Projeto\Repos\Microsservices-FIAP\GeracaoSenha\bin\Debug\net6.0\GeracaoSenha.xml
+C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Boas Praticas\Projeto\Repos\Microsservices-FIAP\GeracaoSenha\obj\Debug\net6.0\GeracaoSenha.xml

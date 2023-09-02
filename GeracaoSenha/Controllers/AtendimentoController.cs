@@ -18,18 +18,13 @@ namespace GeracaoSenha.Controllers
         }
 
         /// <summary>
-        /// Registra o início de um atendimento e retorna a senha gerada
+        /// Registro inicial do atendimento e geração da senha. Retorna o atendimento com sua senha e link para acompanhamento.
         /// </summary>
-        /// <param name="codigoTipoAtendimento">Valor necessário para identificar o tipo do atendimento.
-        /// <br></br>
-        /// 1 - Exame<br></br>
-        /// 2 - Consulta<br></br>
-        /// </param>
+        /// <param name="TipoAtendimento">Valor necessário para identificar o tipo do atendimento. [EXAME, CONSULTA, EXAME_PREFERENCIAL, CONSULTA_PREFERENCIAL, CIRURGIA]</param>
         /// <returns>IActionResult</returns>
         /// <response code="200">Caso o registro seja realizado com sucesso</response> 
         /// <response code="400">Caso o tipo de atendimento não exista.</response> 
         /// 
-
         [HttpPost]
         public IActionResult RegistrarAtendimento([FromBody] CreateAtendimentoDto atendimentoDto)
         {
@@ -41,6 +36,55 @@ namespace GeracaoSenha.Controllers
         }
 
         /// <summary>
+        /// Registra a chamada de um atendimento ao guichê.
+        /// </summary>
+        /// <param name="senha">Código da senha a ser finalizada.</param>
+        /// <param name="guiche">Número do guichê.</param>
+        /// <returns>IActionResult</returns>
+        /// <response code="204">Caso o registro seja realizado com sucesso</response> 
+        /// <response code="404">Caso a senha não exista.</response> 
+        /// 
+        [HttpPut("chamar/{senha}")]
+        public IActionResult Chamar(string senha, [FromBody] ChamarAtendimentoDto chamarDto)
+        {
+            Atendimento atendimento = AtendimentosContext.ConsultarAtendimentoPelaSenha(senha);
+            if (atendimento == null) return NotFound();
+            try
+            {
+                atendimento.Chamar(chamarDto.Guiche);
+            }
+            catch (Exception)
+            {
+                return NotFound();
+            }
+            return NoContent();
+        }
+
+        /// <summary>
+        /// Registra o início de um atendimento no guichê.
+        /// </summary>
+        /// <param name="senha">Código da senha.</param>
+        /// <returns>IActionResult</returns>
+        /// <response code="204">Caso o registro seja realizado com sucesso</response> 
+        /// <response code="404">Caso a senha não exista.</response> 
+        /// 
+        [HttpPut("iniciar/{senha}")]
+        public IActionResult IniciarAtendimento(string senha)
+        {
+            Atendimento atendimento = AtendimentosContext.ConsultarAtendimentoPelaSenha(senha);
+            if (atendimento == null) return NotFound();
+            try
+            {
+                atendimento.Iniciar();
+            }
+            catch (Exception)
+            {
+                return NotFound();
+            }
+            return NoContent();
+        }
+
+        /// <summary>
         /// Registra a finalização de um atendimento no guichê.
         /// </summary>
         /// <param name="senha">Código da senha a ser finalizada.</param>
@@ -48,13 +92,19 @@ namespace GeracaoSenha.Controllers
         /// <response code="204">Caso o registro seja realizado com sucesso</response> 
         /// <response code="404">Caso a senha não exista.</response> 
         /// 
-
-        [HttpPut("{senha}")]
+        [HttpPut("finalizar/{senha}")]
         public IActionResult FinalizarAtendimento(string senha)
         {
             Atendimento atendimento = AtendimentosContext.ConsultarAtendimentoPelaSenha(senha);
-            if (atendimento == null) return NotFound(); 
-            atendimento.Atender();
+            if (atendimento == null) return NotFound();
+            try
+            {
+                atendimento.Finalizar();
+            }
+            catch (Exception)
+            {
+                return NotFound();
+            }
             return NoContent();
         }
 
@@ -66,7 +116,6 @@ namespace GeracaoSenha.Controllers
         /// <response code="200">Caso a senha exista.</response> 
         /// <response code="404">Caso a senha não exista.</response> 
         /// 
-
         [HttpGet("{senha}")]
         public IActionResult ConsultarAtendimento(string senha)
         {
@@ -82,8 +131,5 @@ namespace GeracaoSenha.Controllers
                 return Problem();
             }
         }
-
-
     }
-
 }
