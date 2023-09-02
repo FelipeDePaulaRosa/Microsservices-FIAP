@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "338c4b63-65dd-4491-a9ff-a8f176819237",
+		"name": "Fila",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19199415"
+	},
+	"item": [
+		{
+			"name": "Consultar Fila",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigoTipoAtendimento\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7166/Fila",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7166",
+					"path": [
+						"Fila"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Posição na fila",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigoTipoAtendimento\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7166/Fila/EX0003",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7166",
+					"path": [
+						"Fila",
+						"EX0003"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

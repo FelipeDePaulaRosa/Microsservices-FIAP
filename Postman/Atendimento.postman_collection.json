@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "8a6d82f4-f8af-4cbb-8416-932d9ac5a080",
+		"name": "Atendimento",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19199415"
+	},
+	"item": [
+		{
+			"name": "Gerar Senha",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipoAtendimento\": \"EXAME\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7166/atendimento",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7166",
+					"path": [
+						"atendimento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Finalizar Atendimento",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7166/Atendimento/EX0001",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7166",
+					"path": [
+						"Atendimento",
+						"EX0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Atendimento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7166/Atendimento/EX0001",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7166",
+					"path": [
+						"Atendimento",
+						"EX0001"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
