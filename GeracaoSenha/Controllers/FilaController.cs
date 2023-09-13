@@ -8,10 +8,10 @@ namespace GeracaoSenha.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class FilaController : LogController<AtendimentoController>
+    public class FilaController : LogController<FilaController>
     {
 
-        public FilaController(ILogger<AtendimentoController> logger) : base(logger)
+        public FilaController(ILogger<FilaController> logger) : base(logger)
         {
 
         }
