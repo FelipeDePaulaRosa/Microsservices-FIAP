@@ -8,13 +8,12 @@ namespace GeracaoSenha.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class AtendimentoController : ControllerBase
+    public class AtendimentoController : LogController<AtendimentoController>
     {
-        private readonly ILogger<AtendimentoController> _logger;
 
-        public AtendimentoController(ILogger<AtendimentoController> logger)
+        public AtendimentoController(ILogger<AtendimentoController> logger) : base(logger)
         {
-            _logger = logger;
+
         }
 
         /// <summary>
@@ -28,11 +27,18 @@ namespace GeracaoSenha.Controllers
         [HttpPost]
         public IActionResult RegistrarAtendimento([FromBody] CreateAtendimentoDto atendimentoDto)
         {
-            _logger.LogTrace("Iniciando geração da senha.");
-            Atendimento atendimento = AtendimentosContext.NovoAtendimento(atendimentoDto.TipoAtendimento);
-            var retorno = new ReadAtendimentoDto(atendimento);
-            _logger.LogTrace("Senha gerada com Sucesso.");
-            return Ok(retorno);
+            try
+            {
+                _logger.LogInformation("\n\n\nIniciando registro do atendimento.");
+                Atendimento atendimento = AtendimentosContext.NovoAtendimento(atendimentoDto.TipoAtendimento);
+                var retorno = new ReadAtendimentoDto(atendimento);
+                _logger.LogInformation("Atendimento registrado com Sucesso.");
+                return Ok(retorno);
+            }
+            catch (Exception ex)
+            {
+                return RetornarBadRequest(ex);
+            }
         }
 
         /// <summary>
@@ -47,17 +53,22 @@ namespace GeracaoSenha.Controllers
         [HttpPut("chamar/{senha}")]
         public IActionResult Chamar(string senha, [FromBody] ChamarAtendimentoDto chamarDto)
         {
-            Atendimento atendimento = AtendimentosContext.ConsultarAtendimentoPelaSenha(senha);
-            if (atendimento == null) return NotFound();
             try
             {
+                _logger.LogInformation($"\n\n\nIniciando consulta do atendimento {senha}: Chamar.");
+                Atendimento atendimento = AtendimentosContext.ConsultarAtendimentoPelaSenha(senha);
+                if (atendimento == null)
+                {
+                    return RetornarNotFound("Atendimento");
+                }
                 atendimento.Chamar(chamarDto.Guiche);
+                _logger.LogInformation("Registro atualizado com sucesso.");
+                return NoContent();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return NotFound();
+                return RetornarBadRequest(ex);
             }
-            return NoContent();
         }
 
         /// <summary>
@@ -71,17 +82,22 @@ namespace GeracaoSenha.Controllers
         [HttpPut("iniciar/{senha}")]
         public IActionResult IniciarAtendimento(string senha)
         {
-            Atendimento atendimento = AtendimentosContext.ConsultarAtendimentoPelaSenha(senha);
-            if (atendimento == null) return NotFound();
             try
             {
+                _logger.LogInformation($"\n\n\nIniciando consulta do atendimento {senha}: Iniciar.");
+                Atendimento atendimento = AtendimentosContext.ConsultarAtendimentoPelaSenha(senha);
+                if (atendimento == null)
+                {
+                    return RetornarNotFound("Atendimento");
+                }
                 atendimento.Iniciar();
+                _logger.LogInformation("Registro atualizado com sucesso.");
+                return NoContent();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return NotFound();
+                return RetornarBadRequest(ex);
             }
-            return NoContent();
         }
 
         /// <summary>
@@ -95,17 +111,22 @@ namespace GeracaoSenha.Controllers
         [HttpPut("finalizar/{senha}")]
         public IActionResult FinalizarAtendimento(string senha)
         {
-            Atendimento atendimento = AtendimentosContext.ConsultarAtendimentoPelaSenha(senha);
-            if (atendimento == null) return NotFound();
             try
             {
+                _logger.LogInformation($"\n\n\nIniciando consulta do atendimento {senha}: Finalizar.");
+                Atendimento atendimento = AtendimentosContext.ConsultarAtendimentoPelaSenha(senha);
+                if (atendimento == null)
+                {
+                    return RetornarNotFound("Atendimento");
+                }
                 atendimento.Finalizar();
+                _logger.LogInformation("Registro atualizado com sucesso.");
+                return NoContent();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return NotFound();
+                return RetornarBadRequest(ex);
             }
-            return NoContent();
         }
 
         /// <summary>
@@ -119,16 +140,22 @@ namespace GeracaoSenha.Controllers
         [HttpGet("{senha}")]
         public IActionResult ConsultarAtendimento(string senha)
         {
+
             try
             {
+                _logger.LogInformation($"\n\n\nIniciando consulta do atendimento {senha}.");
                 Atendimento atendimento = AtendimentosContext.ConsultarAtendimentoPelaSenha(senha);
-                if (atendimento == null) return NotFound();
+                if (atendimento == null)
+                {
+                    return RetornarNotFound("Atendimento");
+                }
                 var retorno = new ReadAtendimentoDto(atendimento);
+                _logger.LogInformation("Consulta realizada com sucesso.");
                 return Ok(retorno);
             }
             catch (Exception ex)
             {
-                return Problem();
+                return RetornarBadRequest(ex);
             }
         }
     }

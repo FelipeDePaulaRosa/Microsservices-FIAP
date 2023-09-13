@@ -8,13 +8,12 @@ namespace GeracaoSenha.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class FilaController : ControllerBase
+    public class FilaController : LogController<AtendimentoController>
     {
-        private readonly ILogger<FilaController> _logger;
 
-        public FilaController(ILogger<FilaController> logger)
+        public FilaController(ILogger<AtendimentoController> logger) : base(logger)
         {
-            _logger = logger;
+
         }
 
         /// <summary>
@@ -26,9 +25,20 @@ namespace GeracaoSenha.Controllers
         [HttpGet]
         public IEnumerable<ReadAtendimentoDto> ConsultarFila()
         {
-            List<ReadAtendimentoDto> listaDto = new List<ReadAtendimentoDto>();
-            AtendimentosContext.FilaOrdenada().ForEach(atendimento => listaDto.Add(new ReadAtendimentoDto(atendimento)));
-            return listaDto;
+            try
+            {
+                _logger.LogInformation("\n\n\nIniciando consulta da fila de atendimento.");
+                List<ReadAtendimentoDto> listaDto = new List<ReadAtendimentoDto>();
+                AtendimentosContext.FilaOrdenada().ForEach(atendimento => listaDto.Add(new ReadAtendimentoDto(atendimento)));
+                _logger.LogInformation("Consulta realizada com Sucesso.");
+                return listaDto;
+
+            }
+            catch (Exception ex)
+            {
+                GravarBadRequest(ex);
+                return null;
+            }
         }
 
         /// <summary>
@@ -40,9 +50,19 @@ namespace GeracaoSenha.Controllers
         [HttpGet("proximo")]
         public ReadAtendimentoDto ConsultarProximo()
         {
-            var atendimento = AtendimentosContext.FilaOrdenada().FirstOrDefault();
-            var retorno = new ReadAtendimentoDto(atendimento);
-            return retorno;
+            try
+            {
+                _logger.LogInformation("\n\n\nIniciando consulta do próximo atendimento.");
+                var atendimento = AtendimentosContext.FilaOrdenada().FirstOrDefault();
+                var retorno = new ReadAtendimentoDto(atendimento);
+                _logger.LogInformation("Consulta realizada com Sucesso.");
+                return retorno;
+            }
+            catch (Exception ex)
+            {
+                GravarBadRequest(ex);
+                return null;
+            }
         }
 
         /// <summary>
@@ -56,15 +76,25 @@ namespace GeracaoSenha.Controllers
         [HttpGet("posicao/{senha}")]
         public IActionResult ConsultarPosicao(string senha)
         {
-            var pendentes = AtendimentosContext.Atendimentos.Where(atendimento => atendimento.IsPendente()).OrderBy(atendimento => atendimento.HorarioChegada).ToList();
-            var atendimento = AtendimentosContext.ConsultarAtendimentoPelaSenha(senha);
-            ReadPosicaoDto poscaoDto = new ReadPosicaoDto();
-            poscaoDto.Posicao = pendentes.IndexOf(atendimento) + 1;
-            if (poscaoDto.Posicao > 0)
+            try
             {
-                return Ok(poscaoDto);
+                _logger.LogInformation($"\n\n\nIniciando consulta da posição na fila. Senha: {senha}.");
+                var pendentes = AtendimentosContext.Atendimentos.Where(atendimento => atendimento.IsPendente()).OrderBy(atendimento => atendimento.HorarioChegada).ToList();
+                var atendimento = AtendimentosContext.ConsultarAtendimentoPelaSenha(senha);
+                ReadPosicaoDto poscaoDto = new ReadPosicaoDto();
+                poscaoDto.Posicao = pendentes.IndexOf(atendimento) + 1;
+                if (poscaoDto.Posicao > 0)
+                {
+                    _logger.LogInformation("Consulta realizada com sucesso.");
+                    return Ok(poscaoDto);
+                }
+                return RetornarNotFound("Atendimento");
             }
-            return NotFound();
+            catch (Exception ex)
+            {
+                GravarBadRequest(ex);
+                return null;
+            }
         }
     }
 }

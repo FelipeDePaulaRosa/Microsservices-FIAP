@@ -1,0 +1,421 @@
+2023-09-12 21:28:46.9795|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-09-12 21:28:47.0839|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-09-12 21:28:47.3512|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: E066872A64AEE50DC8340D2D2BC9802834A55A05)
+2023-09-12 21:28:47.3953|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7166
+2023-09-12 21:28:47.3953|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5166
+2023-09-12 21:28:47.3953|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly GeracaoSenha
+2023-09-12 21:28:47.3953|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-12 21:28:47.3953|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-12 21:28:47.3953|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-09-12 21:28:47.3953|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-09-12 21:28:47.3953|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Boas Praticas\Git\GeracaoSenha\
+2023-09-12 21:28:47.3953|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-09-12 21:28:47.5920|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU1IKIPNA" accepted.
+2023-09-12 21:28:47.5920|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU1IKIPN9" accepted.
+2023-09-12 21:28:47.5920|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU1IKIPNA" started.
+2023-09-12 21:28:47.5920|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU1IKIPN9" started.
+2023-09-12 21:28:47.7345|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJU1IKIPN9" received FIN.
+2023-09-12 21:28:47.7345|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJU1IKIPNA" received FIN.
+2023-09-12 21:28:47.7765|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-12 21:28:47.7765|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-12 21:28:47.8475|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU1IKIPN9" stopped.
+2023-09-12 21:28:47.8475|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU1IKIPNA" stopped.
+2023-09-12 21:28:47.8475|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJU1IKIPN9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:28:47.8475|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJU1IKIPNA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:28:48.2196|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU1IKIPNB" accepted.
+2023-09-12 21:28:48.2196|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU1IKIPNB" started.
+2023-09-12 21:28:48.3044|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMTJU1IKIPNB established using the following protocol: Tls13
+2023-09-12 21:28:48.4486|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - -
+2023-09-12 21:28:48.5087|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-09-12 21:28:48.5538|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-09-12 21:28:48.5538|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-09-12 21:28:48.7719|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2023-09-12 21:28:48.9713|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2023-09-12 21:28:48.9773|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - - - 200 - text/html;charset=utf-8 533.2441ms
+2023-09-12 21:28:48.9990|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7166/_framework/aspnetcore-browser-refresh.js - -
+2023-09-12 21:28:49.0618|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7166/_framework/aspnetcore-browser-refresh.js - - - 200 11946 application/javascript;+charset=utf-8 62.6442ms
+2023-09-12 21:28:49.3499|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - -
+2023-09-12 21:28:49.3499|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-09-12 21:28:49.3499|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-09-12 21:28:49.7077|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 358.2113ms
+2023-09-12 21:28:55.6243|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJU1IKIPNB" received FIN.
+2023-09-12 21:28:55.6290|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMTJU1IKIPNB" is closed. The last processed stream ID was 5.
+2023-09-12 21:28:55.6290|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJU1IKIPNB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:28:55.6290|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU1IKIPNB" stopped.
+2023-09-12 21:28:58.5255|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU1IKIPNC" accepted.
+2023-09-12 21:28:58.5255|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU1IKIPNC" started.
+2023-09-12 21:28:58.5255|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMTJU1IKIPNC established using the following protocol: Tls13
+2023-09-12 21:28:58.5255|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7166/Atendimento application/json 32
+2023-09-12 21:28:58.5353|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Atendimento'
+2023-09-12 21:28:58.5353|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)' with route pattern 'Atendimento' is valid for the request path '/Atendimento'
+2023-09-12 21:28:58.5353|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)'
+2023-09-12 21:28:58.5353|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-09-12 21:28:58.5353|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)'
+2023-09-12 21:28:58.5778|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegistrarAtendimento", controller = "Atendimento"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegistrarAtendimento(GeracaoSenha.Data.Dtos.CreateAtendimentoDto) on controller GeracaoSenha.Controllers.AtendimentoController (GeracaoSenha).
+2023-09-12 21:28:58.5778|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-09-12 21:28:58.5778|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-09-12 21:28:58.5778|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-09-12 21:28:58.5778|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-09-12 21:28:58.5778|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-09-12 21:28:58.5778|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller GeracaoSenha.Controllers.AtendimentoController (GeracaoSenha)
+2023-09-12 21:28:58.5880|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha) in 4.7667ms
+2023-09-12 21:28:58.5880|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)'
+2023-09-12 21:28:58.5880|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|System.InvalidOperationException: Unable to resolve service for type 'NLog.ILogger' while attempting to activate 'GeracaoSenha.Controllers.AtendimentoController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-09-12 21:28:58.6028|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7166/Atendimento application/json 32 - 500 - text/plain;+charset=utf-8 72.5187ms
+2023-09-12 21:28:58.6028|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMTJU1IKIPNC", Request id "0HMTJU1IKIPNC:00000001": started reading request body.
+2023-09-12 21:28:58.6028|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMTJU1IKIPNC", Request id "0HMTJU1IKIPNC:00000001": done reading request body.
+2023-09-12 21:29:05.6422|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJU1IKIPNC" received FIN.
+2023-09-12 21:29:05.6422|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMTJU1IKIPNC" is closed. The last processed stream ID was 1.
+2023-09-12 21:29:05.6422|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJU1IKIPNC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:29:05.6422|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU1IKIPNC" stopped.
+2023-09-12 21:30:39.9424|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-09-12 21:30:40.2274|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-09-12 21:30:40.4648|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: E066872A64AEE50DC8340D2D2BC9802834A55A05)
+2023-09-12 21:30:40.5666|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7166
+2023-09-12 21:30:40.5666|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5166
+2023-09-12 21:30:40.5666|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly GeracaoSenha
+2023-09-12 21:30:40.5666|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-12 21:30:40.5666|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-12 21:30:40.5666|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-09-12 21:30:40.5666|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-09-12 21:30:40.5666|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Boas Praticas\Git\GeracaoSenha\
+2023-09-12 21:30:40.5666|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-09-12 21:30:40.7362|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU2KBG6KL" accepted.
+2023-09-12 21:30:40.7362|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU2KBG6KM" accepted.
+2023-09-12 21:30:40.7378|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU2KBG6KM" started.
+2023-09-12 21:30:40.7378|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU2KBG6KL" started.
+2023-09-12 21:30:40.7378|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJU2KBG6KM" received FIN.
+2023-09-12 21:30:40.7378|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJU2KBG6KL" received FIN.
+2023-09-12 21:30:40.7712|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-12 21:30:40.7712|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-12 21:30:40.8139|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU2KBG6KM" stopped.
+2023-09-12 21:30:40.8139|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU2KBG6KL" stopped.
+2023-09-12 21:30:40.8158|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJU2KBG6KM" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:30:40.8158|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJU2KBG6KL" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:30:41.3004|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU2KBG6KN" accepted.
+2023-09-12 21:30:41.3004|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU2KBG6KN" started.
+2023-09-12 21:30:41.3600|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMTJU2KBG6KN established using the following protocol: Tls13
+2023-09-12 21:30:41.4306|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - -
+2023-09-12 21:30:41.6128|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-09-12 21:30:41.7099|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-09-12 21:30:41.7099|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-09-12 21:30:41.8900|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2023-09-12 21:30:42.0574|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2023-09-12 21:30:42.0711|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - - - 200 - text/html;charset=utf-8 653.8746ms
+2023-09-12 21:30:42.0711|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7166/_framework/aspnetcore-browser-refresh.js - -
+2023-09-12 21:30:42.1124|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7166/_framework/aspnetcore-browser-refresh.js - - - 200 11946 application/javascript;+charset=utf-8 38.4515ms
+2023-09-12 21:30:42.3739|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - -
+2023-09-12 21:30:42.3791|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-09-12 21:30:42.3791|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-09-12 21:30:42.6682|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 294.2798ms
+2023-09-12 21:30:46.7343|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7166/Atendimento application/json 32
+2023-09-12 21:30:46.7396|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Atendimento'
+2023-09-12 21:30:46.7396|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)' with route pattern 'Atendimento' is valid for the request path '/Atendimento'
+2023-09-12 21:30:46.7396|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)'
+2023-09-12 21:30:46.7396|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-09-12 21:30:46.7396|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)'
+2023-09-12 21:30:46.7767|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegistrarAtendimento", controller = "Atendimento"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegistrarAtendimento(GeracaoSenha.Data.Dtos.CreateAtendimentoDto) on controller GeracaoSenha.Controllers.AtendimentoController (GeracaoSenha).
+2023-09-12 21:30:46.7767|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-09-12 21:30:46.7767|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-09-12 21:30:46.7767|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-09-12 21:30:46.7767|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-09-12 21:30:46.7767|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-09-12 21:30:46.7767|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller GeracaoSenha.Controllers.AtendimentoController (GeracaoSenha)
+2023-09-12 21:30:46.7878|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha) in 2.8611ms
+2023-09-12 21:30:46.7878|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)'
+2023-09-12 21:30:46.7878|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'GeracaoSenha.Controllers.AtendimentoController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method3(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-09-12 21:30:46.8007|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7166/Atendimento application/json 32 - 500 - text/plain;+charset=utf-8 66.3821ms
+2023-09-12 21:30:46.8007|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMTJU2KBG6KN", Request id "0HMTJU2KBG6KN:00000007": started reading request body.
+2023-09-12 21:30:46.8007|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMTJU2KBG6KN", Request id "0HMTJU2KBG6KN:00000007": done reading request body.
+2023-09-12 21:30:50.8058|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJU2KBG6KN" received FIN.
+2023-09-12 21:30:50.8211|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMTJU2KBG6KN" is closed. The last processed stream ID was 7.
+2023-09-12 21:30:50.8211|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJU2KBG6KN" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:30:50.8367|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJU2KBG6KN" stopped.
+2023-09-12 21:51:21.7464|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-09-12 21:51:21.8179|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-09-12 21:51:21.9600|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: E066872A64AEE50DC8340D2D2BC9802834A55A05)
+2023-09-12 21:51:22.0081|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7166
+2023-09-12 21:51:22.0081|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5166
+2023-09-12 21:51:22.0243|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly GeracaoSenha
+2023-09-12 21:51:22.0243|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-12 21:51:22.0243|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-12 21:51:22.0243|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-09-12 21:51:22.0243|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-09-12 21:51:22.0243|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Boas Praticas\Git\GeracaoSenha\
+2023-09-12 21:51:22.0243|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-09-12 21:51:22.1217|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUE6AB6L1" accepted.
+2023-09-12 21:51:22.1217|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUE6AB6L2" accepted.
+2023-09-12 21:51:22.1217|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUE6AB6L1" started.
+2023-09-12 21:51:22.1217|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUE6AB6L2" started.
+2023-09-12 21:51:22.2139|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUE6AB6L1" reset.
+2023-09-12 21:51:22.2139|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUE6AB6L2" reset.
+2023-09-12 21:51:22.2710|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|Microsoft.AspNetCore.Connections.ConnectionResetException: Foi forçado o cancelamento de uma conexão existente pelo host remoto.
+ ---> System.Net.Sockets.SocketException (10054): Foi forçado o cancelamento de uma conexão existente pelo host remoto.
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.<GetResult>g__ThrowSocketException|5_0(SocketError e)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.DoReceive()
+   --- End of inner exception stack trace ---
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-12 21:51:22.2710|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|Microsoft.AspNetCore.Connections.ConnectionResetException: Foi forçado o cancelamento de uma conexão existente pelo host remoto.
+ ---> System.Net.Sockets.SocketException (10054): Foi forçado o cancelamento de uma conexão existente pelo host remoto.
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.<GetResult>g__ThrowSocketException|5_0(SocketError e)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketAwaitableEventArgs.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.Internal.SocketConnection.DoReceive()
+   --- End of inner exception stack trace ---
+   at System.IO.Pipelines.Pipe.GetReadResult(ReadResult& result)
+   at System.IO.Pipelines.Pipe.GetReadAsyncResult()
+   at System.IO.Pipelines.Pipe.DefaultPipeReader.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.DuplexPipeStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-12 21:51:22.5261|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUE6AB6L1" stopped.
+2023-09-12 21:51:22.5261|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUE6AB6L2" stopped.
+2023-09-12 21:51:22.5261|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUE6AB6L1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:51:22.5261|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUE6AB6L2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:51:22.7646|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUE6AB6L3" accepted.
+2023-09-12 21:51:22.7646|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUE6AB6L3" started.
+2023-09-12 21:51:22.8386|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMTJUE6AB6L3 established using the following protocol: Tls13
+2023-09-12 21:51:23.0453|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - -
+2023-09-12 21:51:23.1737|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-09-12 21:51:23.3282|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-09-12 21:51:23.3282|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-09-12 21:51:23.7429|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2023-09-12 21:51:24.0003|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7166/_framework/aspnetcore-browser-refresh.js - -
+2023-09-12 21:51:24.0217|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2023-09-12 21:51:24.0217|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - - - 200 - text/html;charset=utf-8 993.4067ms
+2023-09-12 21:51:24.0217|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7166/_framework/aspnetcore-browser-refresh.js - - - 200 11946 application/javascript;+charset=utf-8 29.0589ms
+2023-09-12 21:51:24.3828|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - -
+2023-09-12 21:51:24.3828|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-09-12 21:51:24.3828|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-09-12 21:51:24.7122|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 329.3672ms
+2023-09-12 21:51:27.7913|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUE6AB6L3" received FIN.
+2023-09-12 21:51:27.8031|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMTJUE6AB6L3" is closed. The last processed stream ID was 5.
+2023-09-12 21:51:27.8031|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUE6AB6L3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:51:27.8031|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUE6AB6L3" stopped.
+2023-09-12 21:51:28.5270|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUE6AB6L4" accepted.
+2023-09-12 21:51:28.5270|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUE6AB6L4" started.
+2023-09-12 21:51:28.5270|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMTJUE6AB6L4 established using the following protocol: Tls13
+2023-09-12 21:51:28.5270|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7166/Atendimento application/json 32
+2023-09-12 21:51:28.5382|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Atendimento'
+2023-09-12 21:51:28.5382|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)' with route pattern 'Atendimento' is valid for the request path '/Atendimento'
+2023-09-12 21:51:28.5382|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)'
+2023-09-12 21:51:28.5382|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-09-12 21:51:28.5382|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)'
+2023-09-12 21:51:28.5709|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegistrarAtendimento", controller = "Atendimento"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegistrarAtendimento(GeracaoSenha.Data.Dtos.CreateAtendimentoDto) on controller GeracaoSenha.Controllers.AtendimentoController (GeracaoSenha).
+2023-09-12 21:51:28.5709|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-09-12 21:51:28.5709|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-09-12 21:51:28.5709|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-09-12 21:51:28.5709|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-09-12 21:51:28.5709|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-09-12 21:51:28.5709|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller GeracaoSenha.Controllers.AtendimentoController (GeracaoSenha)
+2023-09-12 21:51:28.5709|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller GeracaoSenha.Controllers.AtendimentoController (GeracaoSenha)
+2023-09-12 21:51:28.5866|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'atendimentoDto' of type 'GeracaoSenha.Data.Dtos.CreateAtendimentoDto' ...
+2023-09-12 21:51:28.5866|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'atendimentoDto' of type 'GeracaoSenha.Data.Dtos.CreateAtendimentoDto' using the name '' in request data ...
+2023-09-12 21:51:28.5866|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-09-12 21:51:28.5866|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMTJUE6AB6L4", Request id "0HMTJUE6AB6L4:00000001": started reading request body.
+2023-09-12 21:51:28.5866|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMTJUE6AB6L4", Request id "0HMTJUE6AB6L4:00000001": done reading request body.
+2023-09-12 21:51:28.6004|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'GeracaoSenha.Data.Dtos.CreateAtendimentoDto'
+2023-09-12 21:51:28.6004|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'atendimentoDto' of type 'GeracaoSenha.Data.Dtos.CreateAtendimentoDto'.
+2023-09-12 21:51:28.6004|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'atendimentoDto' of type 'GeracaoSenha.Data.Dtos.CreateAtendimentoDto'.
+2023-09-12 21:51:28.6004|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'atendimentoDto' of type 'GeracaoSenha.Data.Dtos.CreateAtendimentoDto' ...
+2023-09-12 21:51:28.6004|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'atendimentoDto' of type 'GeracaoSenha.Data.Dtos.CreateAtendimentoDto'.
+2023-09-12 21:51:28.6123|INFO|GeracaoSenha.Controllers.AtendimentoController|Iniciando registro do atendimento.
+2023-09-12 21:51:28.6123|INFO|GeracaoSenha.Controllers.AtendimentoController|Atendimento registrado com Sucesso.
+2023-09-12 21:51:28.6123|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-09-12 21:51:28.6123|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-09-12 21:51:28.6123|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-09-12 21:51:28.6123|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-09-12 21:51:28.6123|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-09-12 21:51:28.6123|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'GeracaoSenha.Data.Dtos.ReadAtendimentoDto'.
+2023-09-12 21:51:28.6343|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha) in 58.8053ms
+2023-09-12 21:51:28.6343|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)'
+2023-09-12 21:51:28.6343|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7166/Atendimento application/json 32 - 200 - application/json;+charset=utf-8 102.8018ms
+2023-09-12 21:51:37.8131|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUE6AB6L4" received FIN.
+2023-09-12 21:51:37.8131|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMTJUE6AB6L4" is closed. The last processed stream ID was 1.
+2023-09-12 21:51:37.8131|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUE6AB6L4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:51:37.8131|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUE6AB6L4" stopped.
+2023-09-12 21:52:01.9982|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUE6AB6L5" accepted.
+2023-09-12 21:52:02.0125|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUE6AB6L5" started.
+2023-09-12 21:52:02.0325|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMTJUE6AB6L5 established using the following protocol: Tls13
+2023-09-12 21:52:02.0325|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7166/Atendimento/EX0001 - -
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Atendimento/EX0001'
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'GeracaoSenha.Controllers.AtendimentoController.ConsultarAtendimento (GeracaoSenha)' with route pattern 'Atendimento/{senha}' is valid for the request path '/Atendimento/EX0001'
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'GeracaoSenha.Controllers.AtendimentoController.ConsultarAtendimento (GeracaoSenha)'
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-09-12 21:52:02.0347|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'GeracaoSenha.Controllers.AtendimentoController.ConsultarAtendimento (GeracaoSenha)'
+2023-09-12 21:52:02.0347|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ConsultarAtendimento", controller = "Atendimento"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ConsultarAtendimento(System.String) on controller GeracaoSenha.Controllers.AtendimentoController (GeracaoSenha).
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller GeracaoSenha.Controllers.AtendimentoController (GeracaoSenha)
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller GeracaoSenha.Controllers.AtendimentoController (GeracaoSenha)
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'senha' of type 'System.String' ...
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'senha' of type 'System.String' using the name 'senha' in request data ...
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'senha' of type 'System.String'.
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'senha' of type 'System.String'.
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'senha' of type 'System.String' ...
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'senha' of type 'System.String'.
+2023-09-12 21:52:02.0347|INFO|GeracaoSenha.Controllers.AtendimentoController|Iniciando consulta do atendimento EX0001.
+2023-09-12 21:52:02.0347|INFO|GeracaoSenha.Controllers.AtendimentoController|Consulta realizada com sucesso.
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-09-12 21:52:02.0347|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-09-12 21:52:02.0347|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'GeracaoSenha.Data.Dtos.ReadAtendimentoDto'.
+2023-09-12 21:52:02.0347|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action GeracaoSenha.Controllers.AtendimentoController.ConsultarAtendimento (GeracaoSenha) in 2.2716ms
+2023-09-12 21:52:02.0347|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'GeracaoSenha.Controllers.AtendimentoController.ConsultarAtendimento (GeracaoSenha)'
+2023-09-12 21:52:02.0347|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7166/Atendimento/EX0001 - - - 200 - application/json;+charset=utf-8 10.3792ms
+2023-09-12 21:52:07.8530|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUE6AB6L5" received FIN.
+2023-09-12 21:52:07.8530|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMTJUE6AB6L5" is closed. The last processed stream ID was 1.
+2023-09-12 21:52:07.8530|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUE6AB6L5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:52:07.8530|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUE6AB6L5" stopped.
+2023-09-12 21:54:23.2954|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2023-09-12 21:54:23.4390|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-09-12 21:54:23.6110|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: E066872A64AEE50DC8340D2D2BC9802834A55A05)
+2023-09-12 21:54:23.6788|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7166
+2023-09-12 21:54:23.6788|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5166
+2023-09-12 21:54:23.6788|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly GeracaoSenha
+2023-09-12 21:54:23.6788|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-12 21:54:23.6788|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-12 21:54:23.6788|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-09-12 21:54:23.6788|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-09-12 21:54:23.6788|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Eduardo Cesar\Documents\Estudos\FIAP\Boas Praticas\Git\GeracaoSenha\
+2023-09-12 21:54:23.6788|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-09-12 21:54:23.8432|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUFSFE8KQ" received FIN.
+2023-09-12 21:54:23.8432|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUFSFE8KR" received FIN.
+2023-09-12 21:54:23.8483|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUFSFE8KQ" accepted.
+2023-09-12 21:54:23.8483|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUFSFE8KR" accepted.
+2023-09-12 21:54:23.8483|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUFSFE8KQ" started.
+2023-09-12 21:54:23.8483|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUFSFE8KR" started.
+2023-09-12 21:54:23.8869|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-12 21:54:23.8869|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-12 21:54:23.9768|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUFSFE8KQ" stopped.
+2023-09-12 21:54:23.9768|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUFSFE8KR" stopped.
+2023-09-12 21:54:23.9768|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUFSFE8KQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:54:23.9768|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUFSFE8KR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:54:24.3536|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUFSFE8KS" accepted.
+2023-09-12 21:54:24.3536|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUFSFE8KS" started.
+2023-09-12 21:54:24.4049|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMTJUFSFE8KS established using the following protocol: Tls13
+2023-09-12 21:54:24.4526|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7166/swagger/index.html - -
+2023-09-12 21:54:24.5009|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-09-12 21:54:24.5697|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2023-09-12 21:54:24.5697|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-09-12 21:54:24.7523|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2023-09-12 21:54:24.9091|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7166/_framework/aspnetcore-browser-refresh.js - -
+2023-09-12 21:54:24.9122|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2023-09-12 21:54:24.9122|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7166/_framework/aspnetcore-browser-refresh.js - - - 200 11946 application/javascript;+charset=utf-8 11.0618ms
+2023-09-12 21:54:24.9122|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7166/swagger/index.html - - - 200 - text/html;charset=utf-8 471.3451ms
+2023-09-12 21:54:25.2034|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - -
+2023-09-12 21:54:25.2067|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2023-09-12 21:54:25.2067|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2023-09-12 21:54:25.4663|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7166/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 262.8522ms
+2023-09-12 21:54:28.0352|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUFSFE8KS" received FIN.
+2023-09-12 21:54:28.0352|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMTJUFSFE8KS" is closed. The last processed stream ID was 5.
+2023-09-12 21:54:28.0352|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUFSFE8KS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:54:28.0352|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUFSFE8KS" stopped.
+2023-09-12 21:54:30.2842|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUFSFE8KT" accepted.
+2023-09-12 21:54:30.2842|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUFSFE8KT" started.
+2023-09-12 21:54:30.2842|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HMTJUFSFE8KT established using the following protocol: Tls13
+2023-09-12 21:54:30.2842|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7166/Atendimento application/json 32
+2023-09-12 21:54:30.3101|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/Atendimento'
+2023-09-12 21:54:30.3166|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)' with route pattern 'Atendimento' is valid for the request path '/Atendimento'
+2023-09-12 21:54:30.3166|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)'
+2023-09-12 21:54:30.3166|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2023-09-12 21:54:30.3166|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)'
+2023-09-12 21:54:30.3404|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegistrarAtendimento", controller = "Atendimento"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegistrarAtendimento(GeracaoSenha.Data.Dtos.CreateAtendimentoDto) on controller GeracaoSenha.Controllers.AtendimentoController (GeracaoSenha).
+2023-09-12 21:54:30.3404|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-09-12 21:54:30.3404|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-09-12 21:54:30.3404|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-09-12 21:54:30.3404|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-09-12 21:54:30.3404|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-09-12 21:54:30.3404|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller GeracaoSenha.Controllers.AtendimentoController (GeracaoSenha)
+2023-09-12 21:54:30.3404|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller GeracaoSenha.Controllers.AtendimentoController (GeracaoSenha)
+2023-09-12 21:54:30.3552|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'atendimentoDto' of type 'GeracaoSenha.Data.Dtos.CreateAtendimentoDto' ...
+2023-09-12 21:54:30.3552|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'atendimentoDto' of type 'GeracaoSenha.Data.Dtos.CreateAtendimentoDto' using the name '' in request data ...
+2023-09-12 21:54:30.3552|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-09-12 21:54:30.3552|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMTJUFSFE8KT", Request id "0HMTJUFSFE8KT:00000001": started reading request body.
+2023-09-12 21:54:30.3552|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HMTJUFSFE8KT", Request id "0HMTJUFSFE8KT:00000001": done reading request body.
+2023-09-12 21:54:30.3701|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'GeracaoSenha.Data.Dtos.CreateAtendimentoDto'
+2023-09-12 21:54:30.3701|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'atendimentoDto' of type 'GeracaoSenha.Data.Dtos.CreateAtendimentoDto'.
+2023-09-12 21:54:30.3701|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'atendimentoDto' of type 'GeracaoSenha.Data.Dtos.CreateAtendimentoDto'.
+2023-09-12 21:54:30.3701|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'atendimentoDto' of type 'GeracaoSenha.Data.Dtos.CreateAtendimentoDto' ...
+2023-09-12 21:54:30.3778|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'atendimentoDto' of type 'GeracaoSenha.Data.Dtos.CreateAtendimentoDto'.
+2023-09-12 21:54:30.3778|INFO|GeracaoSenha.Controllers.AtendimentoController|Iniciando registro do atendimento.
+2023-09-12 21:54:30.3778|INFO|GeracaoSenha.Controllers.AtendimentoController|Atendimento registrado com Sucesso.
+2023-09-12 21:54:30.3778|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-09-12 21:54:30.3778|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-09-12 21:54:30.3778|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-09-12 21:54:30.3778|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-09-12 21:54:30.3778|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-09-12 21:54:30.3778|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'GeracaoSenha.Data.Dtos.ReadAtendimentoDto'.
+2023-09-12 21:54:30.4027|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha) in 57.2848ms
+2023-09-12 21:54:30.4027|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'GeracaoSenha.Controllers.AtendimentoController.RegistrarAtendimento (GeracaoSenha)'
+2023-09-12 21:54:30.4027|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7166/Atendimento application/json 32 - 200 - application/json;+charset=utf-8 105.0461ms
+2023-09-12 21:54:38.0567|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUFSFE8KT" received FIN.
+2023-09-12 21:54:38.0567|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HMTJUFSFE8KT" is closed. The last processed stream ID was 1.
+2023-09-12 21:54:38.0567|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HMTJUFSFE8KT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-12 21:54:38.0567|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HMTJUFSFE8KT" stopped.

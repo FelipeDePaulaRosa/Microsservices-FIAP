@@ -29,7 +29,15 @@ namespace GeracaoSenha.Data
             var Lista = new List<Atendimento>();
 
             var sigla = Senha.Substring(0, 2);
-            var tipoAtendimento = SiglaTipoAtendimento.GetTipoAtendimentoSigla(sigla);
+            TipoAtendimento tipoAtendimento = new TipoAtendimento();
+            try
+            {
+                tipoAtendimento = SiglaTipoAtendimento.GetTipoAtendimentoSigla(sigla);
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                throw ex;
+            }
 
             var atendimento = Atendimentos.FirstOrDefault(atendimento => atendimento.Id == Convert.ToInt32(Senha.Substring(2, 4)) && atendimento.TipoAtendimento == tipoAtendimento);
             return atendimento;

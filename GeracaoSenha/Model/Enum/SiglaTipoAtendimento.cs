@@ -47,7 +47,7 @@
                     return TipoAtendimento.CIRURGIA;
                     break;
                 default:
-                    throw new ArgumentOutOfRangeException("A sigla " + sigla + "não corresponde a um tipo de atendimento.");
+                    throw new ArgumentOutOfRangeException($"A sigla {sigla} não corresponde a um tipo de atendimento.");
                     break;
             }
         }
